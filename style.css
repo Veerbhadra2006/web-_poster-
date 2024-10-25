@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+WAL:wght@100..400&family=Playwrite+DK+Uloopet:wght@100..400&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better layout control */
+}
+
+body {
+    background-color: grey;
+}
+
+.container {
+    width: 90%; /* Changed to a percentage for flexibility */
+    max-width: 340px; /* Maximum width to keep it centered on larger screens */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: rgb(230, 218, 218);
+    border-radius: 10px;
+    margin: 40px auto; /* Centering the container */
+    overflow: hidden; /* Prevents overflow if the content exceeds the container */
+}
+
+img {
+    width: 100%; /* Make image responsive */
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.hero {
+    padding: 12px 8px;
+}
+
+.hero span {
+    border: 1.9px solid black;
+    padding: 1px 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: system-ui;
+    margin: 0 10px 0 0; /* Adjusted margin for better spacing */
+    border-color: rgb(96, 100, 100);
+}
+
+.button {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 4px 10px; /* Increased padding for better touch target */
+    border: 2px solid rgb(138, 198, 238);
+    color: rgb(5, 107, 173);
+    background-color: rgb(138, 198, 238);
+    cursor: pointer; /* Indicates that the button is clickable */
+}
+
+.content {
+    padding: 13px;
+}
+
+.content p {
+    font-size: 16px;
+    color: rgb(70, 69, 69);
+    font-family: system-ui;
+    padding-top: 15px;
+}
+
+.content h2 {
+    font-family: "Zilla Slab", serif;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px; /* Adjust margin for smaller screens */
+        padding: 10px; /* Add some padding */
+    }
+
+    .hero span {
+        font-size: 12px; /* Smaller font for smaller screens */
+    }
+
+    .content h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .content p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+
+    .btn {
+        padding: 6px 12px; /* Adjust button padding */
+    }
+}
